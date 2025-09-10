@@ -11,6 +11,10 @@ const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full'
   },
+  {
+    path: 'sports',
+    loadChildren: () => import('./sports/sports.module').then( m => m.SportsPageModule)
+  },
 ];
 
 @NgModule({
