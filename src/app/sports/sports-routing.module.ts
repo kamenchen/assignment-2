@@ -11,6 +11,10 @@ const routes: Routes = [
   {
     path: 'answer',
     loadChildren: () => import('./answer/answer.module').then( m => m.AnswerPageModule)
+  },
+  {
+    path: 'comments',
+    loadChildren: () => import('./comments/comments.module').then( m => m.CommentsPageModule)
   }
 ];
 
